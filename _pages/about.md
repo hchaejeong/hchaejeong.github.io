@@ -7,14 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I am an M.S. student in the School of Computing at KAIST. My recent work focuses on retrieval-augmented generation, graph RAG, large language models, and semantic operators.
+I am a M.S. student in [InfoLab](https://infolab.kaist.ac.kr) at KAIST. My recent work focuses on retrieval-augmented generation, specifically on efficient graph RAG, information retrieval on large language models, and semantic operators.
 
-My current research and engineering experience includes graph RAG refinement, RAG-based root cause analysis for cloud systems, and MLOps systems for distributed ML pipelines.
+<!-- My current research and engineering experience includes graph RAG refinement, RAG-based root cause analysis for cloud systems, and MLOps systems for distributed ML pipelines. -->
 
 ## Research Interests
 
-- Retrieval-augmented generation
-- Graph RAG
+- Information retrieval
+- RAG, Graph RAG
 - Large language models
 - Semantic operators
 
@@ -25,4 +25,4 @@ My current research and engineering experience includes graph RAG refinement, RA
 - LinkedIn: [chaejeong-hyun-2201162b5](https://www.linkedin.com/in/chaejeong-hyun-2201162b5/)
 - Google Scholar: [Profile](https://scholar.google.com/citations?user=XrEI4uYAAAAJ)
 
-For a complete summary, see the [CV](/cv/) and [Publications](/publications/) pages.
+For a complete summary, see my [CV](/files/CV.pdf) and [Publications](/publications/).

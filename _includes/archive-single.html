@@ -12,6 +12,35 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.collection == 'publications' %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="publication-card{% unless post.preview_pdf %} publication-card--without-preview{% endunless %}" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    {% if post.preview_pdf %}
+      <div class="publication-card__visual">
+        {% include publication-preview.html pdf=post.preview_pdf title=post.title compact=true ratio=post.preview_ratio %}
+      </div>
+    {% endif %}
+
+    <div class="publication-card__body">
+      <h2 class="publication-card__title" itemprop="headline">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      </h2>
+
+      {% if post.authors %}
+        <p class="publication-card__authors">{{ post.authors }}</p>
+      {% endif %}
+
+      <p class="publication-card__meta">
+        {% if post.publication_note %}<em>{{ post.publication_note }}</em>{% endif %}
+        {% if post.paperurl %}
+          {% if post.publication_note %}<span aria-hidden="true">, </span>{% endif %}
+          <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.paper_label | default: "Paper" }}</a>
+        {% endif %}
+      </p>
+    </div>
+  </article>
+</div>
+{% else %}
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -86,3 +115,4 @@
 
   </article>
 </div>
+{% endif %}

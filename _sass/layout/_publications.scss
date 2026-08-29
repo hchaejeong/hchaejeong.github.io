@@ -16,3 +16,77 @@
     text-align: right;
   }
 }
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(12rem, 30%) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &--without-preview {
+    display: block;
+    padding-left: calc(30% + 2rem);
+  }
+}
+
+.publication-card__visual {
+  min-width: 0;
+}
+
+.publication-preview--compact {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: var(--publication-preview-ratio, 16 / 9);
+  background: #fff;
+
+  object {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+.publication-card__title {
+  margin: 0 0 0.8rem;
+  font-family: $serif;
+  font-size: $type-size-4;
+  line-height: 1.25;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.publication-card__authors,
+.publication-card__meta {
+  margin: 0;
+  font-size: $type-size-6;
+  line-height: 1.55;
+}
+
+.publication-card__authors {
+  margin-bottom: 0.6rem;
+}
+
+.publication-card__meta a {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    &--without-preview {
+      padding-left: 0;
+    }
+  }
+
+  .publication-card__visual {
+    width: min(100%, 30rem);
+  }
+}
