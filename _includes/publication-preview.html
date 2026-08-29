@@ -1,0 +1,15 @@
+{% include base_path %}
+
+{% if include.pdf %}
+  {% if include.pdf contains "://" %}
+    {% assign preview_url = include.pdf %}
+  {% else %}
+    {% assign preview_url = include.pdf | prepend: base_path %}
+  {% endif %}
+  <figure class="publication-preview">
+    <object data="{{ preview_url }}#toolbar=0&amp;navpanes=0" type="application/pdf" aria-label="Preview of {{ include.title }}">
+      <p>Your browser cannot display this preview. <a href="{{ preview_url }}">Open the preview PDF</a>.</p>
+    </object>
+    <figcaption><a href="{{ preview_url }}" target="_blank" rel="noopener">Open preview in a new tab</a></figcaption>
+  </figure>
+{% endif %}

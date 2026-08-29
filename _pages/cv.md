@@ -11,54 +11,38 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* March 2026 - Present: M.S. in School of Computing, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Korea
+
+* August 2021 - February 2026: B.S. in School of Computing with AI Special Designated Major, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Korea
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* February 2025 - June 2025: Undergraduate Research
+  * InfoLab KAIST, Daejeon, Korea
+  * Researched retrieval-augmented generation systems
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* August 2024 - February 2025: MLOps Engineer
+  * DevStack, Seoul, Korea
+  * Developed a root cause analysis solution for Kubernetes and OpenStack services using RAG-based LLMs and knowledge graphs
+  * Designed and implemented an optimized edge-computing MLOps system for inter-cluster ML pipelines
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* December 2023 - January 2024: Intensive Programming and Startup Participant
+  * MadCamp, KAIST, Daejeon, Korea
+  * Created four end-to-end services from ideation to deployment in a 5-week intensive program
+  * Developed Android applications and a Next.js-based metaverse project
+
+* June 2023 - August 2023: Backend Developer
+  * TainAI, Seoul, Korea
+  * Contributed to the initial backend database setup for a new e-commerce promotion application
+  * Developed backend services for member authorization, invitations, subscriptions, and payments
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* February 2024: Excellence Award, 2024 Service Hackathon (ELICE)
+  * Participated as a full-stack developer to create an iOS application addressing illegal parking issues in Daejeon
